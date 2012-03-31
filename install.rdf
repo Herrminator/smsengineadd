@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: install.rdf 84 2012-03-05 16:37:36Z hhofer69@gmail.com $ -->
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{049291b3-6326-4812-8300-4eb5edebcd89}</em:id>
+    <em:type>2</em:type>
+    
+    <em:name>Add Search Engines for SeaMonkey</em:name> <!-- We'll probably have to change this -->
+    
+    <!-- REMOVEME: Don't forget to update about.xul (also Ask.com) and update.rdf, too! -->
+    <em:version>0.1.0-dev</em:version>
+
+    <em:creator>Herrminator</em:creator>
+    <em:homepageURL>http://code.google.com/p/smsengineadd/wiki/README</em:homepageURL>
+    <em:description>Add missing search-engine detection to SeaMonkey</em:description>
+    <em:iconURL>chrome://smsengineadd/skin/icon.png</em:iconURL>  
+    
+    <em:targetApplication>
+      <Description>
+        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id> <!-- SeaMonkey -->
+        <em:minVersion>2.2</em:minVersion>
+        <em:maxVersion>2.11a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:updateURL>https://smsengineadd.googlecode.com/svn/trunk/update.rdf</em:updateURL>
+  </Description>
+</RDF>

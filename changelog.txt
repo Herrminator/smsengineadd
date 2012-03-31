@@ -1,0 +1,7 @@
+0.1.0:
+  Initial version
+
+0.0.0:
+
+Icons from http://openiconlibrary.sourceforge.net/
+  icon: 48x48\actions\edit-find-5.png

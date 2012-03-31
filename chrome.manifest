@@ -1,0 +1,8 @@
+content   smsengineadd                  chrome/content/ contentaccessible=yes
+skin      smsengineadd    classic/1.0   chrome/skin/
+locale    smsengineadd    en-US         chrome/locale/en-US/
+
+resource  smsemodules                   modules/
+
+# SeaMonkey
+overlay	chrome://navigator/content/navigator.xul             chrome://smsengineadd/content/overlay.xul application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}

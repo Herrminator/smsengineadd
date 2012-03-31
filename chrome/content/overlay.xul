@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay SYSTEM "chrome://smsengineadd/locale/overlay.dtd">
+
+<!-- $Id: overlay.xul 59 2012-02-05 20:34:25Z hhofer69 $ -->
+
+<overlay id="smsengineadd-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="smsengineadd.js" type="application/ecmascript"/>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="smsengineadd-strings" src="chrome://smsengineadd/locale/overlay.properties"/>
+  </stringbundleset>
+
+  <box id="notification-popup-box">
+    <image id="foobar-notification-icon" class="notification-anchor-icon" role="button" insertafter="password-notification-icon"/>
+  </box>
+    
+</overlay>
