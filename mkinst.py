@@ -49,7 +49,7 @@ def main(argv=sys.argv[1:]):
     assert rc == 0, "SVN export failed"
   else:
     print "Copying to '%s'" % svnbdir
-    shutil.copytree(inpdir, svnbdir, ignore=shutil.ignore_patterns(os.path.basename(svnbdir)));
+    shutil.copytree(inpdir, svnbdir, ignore=shutil.ignore_patterns(os.path.basename(svnbdir), ".git"));
 
   inpdir = svnbdir
   

@@ -8,7 +8,7 @@
     <em:name>Add Search Engines for SeaMonkey</em:name> <!-- We'll probably have to change this -->
     
     <!-- REMOVEME: Don't forget to update about.xul (also Ask.com) and update.rdf, too! -->
-    <em:version>0.1.0-dev</em:version>
+    <em:version>0.1.0pre2-dev</em:version>
 
     <em:creator>Herrminator</em:creator>
     <em:homepageURL>http://code.google.com/p/smsengineadd/wiki/README</em:homepageURL>
@@ -22,6 +22,6 @@
         <em:maxVersion>2.11a1</em:maxVersion>
       </Description>
     </em:targetApplication>
-    <em:updateURL>https://smsengineadd.googlecode.com/svn/trunk/update.rdf</em:updateURL>
+    <em:updateURL>https://github.com/Herrminator/smsengineadd/raw/master/update.rdf</em:updateURL>
   </Description>
 </RDF>

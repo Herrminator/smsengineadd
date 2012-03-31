@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <RDF:Description about="urn:mozilla:extension:{049291b3-6326-4812-8300-4eb5edebcd89}">
+    <em:updates>
+      <RDF:Seq>
+
+        <RDF:li>
+          <RDF:Description>
+            <em:version>0.1.0pre2-dev</em:version> <!-- This is the version number of the add-on -->
+            <!-- ALERT: please update the updateLink's below! -->
+            
+            <em:targetApplication>
+              <!-- Seamonkey -->
+              <Description>
+                <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+                <em:minVersion>2.2</em:minVersion>
+                <em:maxVersion>2.11a1</em:maxVersion>
+                <em:updateLink>https://github.com/Herrminator/smsengineadd/raw/master/versions/smsengineadd-latest-dev.xpi</em:updateLink>
+              </Description>
+            </em:targetApplication>
+          </RDF:Description>
+        </RDF:li>
+
+
+      </RDF:Seq>
+      
+    </em:updates>
+  </RDF:Description>
+  
+</RDF:RDF>
