@@ -17,5 +17,5 @@ This add-on suppplies this functionality.
 More
 ----
 
-Please see the [Wiki pages](wiki/) for more information and download
+Please see the [Wiki pages](smsengineadd/wiki/) for more information and download
 locations.
