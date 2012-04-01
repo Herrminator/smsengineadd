@@ -1,5 +1,15 @@
+* Set github wiki as homepage
+  
+0.1.1:
+
++ Add README as per github recommendation
++ Add wiki repository as submodule  
+* Bump version number
+* Ignore pre version directory  
+
 0.1.0:
-  Initial version
+
+Initial version
 
 0.0.0:
 

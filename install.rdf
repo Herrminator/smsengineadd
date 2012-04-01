@@ -11,7 +11,7 @@
     <em:version>0.1.1pre1-dev</em:version>
 
     <em:creator>Herrminator</em:creator>
-    <em:homepageURL>http://code.google.com/p/smsengineadd/wiki/README</em:homepageURL>
+    <em:homepageURL>https://github.com/Herrminator/smsengineadd/wiki</em:homepageURL>
     <em:description>Add missing search-engine detection to SeaMonkey</em:description>
     <em:iconURL>chrome://smsengineadd/skin/icon.png</em:iconURL>  
     
