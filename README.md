@@ -14,4 +14,8 @@ The only thing not implemented is the detection mechanism.
 
 This add-on suppplies this functionality.
 
+More
+----
 
+Please see the [Wiki pages](wiki/) for more information and download
+locations.
