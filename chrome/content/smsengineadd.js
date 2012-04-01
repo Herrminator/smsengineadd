@@ -11,11 +11,30 @@ var SMSearchEngineAdd = {
     window.removeEventListener("load", SMS_onLoad, false);
     window.addEventListener("unload", SMSearchEngineAdd.onUnload, false);
     gBrowser.addEventListener("DOMLinkAdded", SMSearchEngineAdd.onLinkAdded, false);
+    // for FormHistoryControl integration
+    let searchbar = document.getElementById("searchbar");
+    if (searchbar) {
+      let searchbarBox = document.getAnonymousElementByAttribute(searchbar, "anonid", "searchbar-textbox");
+      searchbarBox.addEventListener("popupshown", SMSearchEngineAdd.onPopupshown, false);
+    }
   },
   
   onUnload: function SMS_onUnload() {
     window.removeEventListener("unload", SMS_onUnload, false);
     gBrowser.removeEventListener("DOMLinkAdded", SMSearchEngineAdd.onLinkAdded, true);
+  },
+  
+  onPopupshown: function SMS_onPopupshown(evt) {
+    if (FhcShowDialog) {
+      // FormHistoryControl is installed
+      try {
+        let fhc = {};
+        Services.scriptloader.loadSubScript("chrome://formhistory/content/overlay/FhcSearchbarOverlay.js", fhc);
+        fhc.FhcSearchbarOverlay.popupshown(evt);
+      } catch (exc) {
+        Components.utils.reportError(exc);
+      }
+    }
   },
   
   get searchBar() {
