@@ -1,4 +1,4 @@
-// $Id: logutils.jsm 31 2012-02-28 10:21:18Z hhofer69@gmail.com $
+// $Id: logutils.jsm 58 2012-06-02 11:41:32Z hhofer69@gmail.com $
 
 "use strict";
 
@@ -28,27 +28,25 @@ var Logging = {
     if (!level) level = 0;
     // see https://github.com/eriwen/javascript-stacktrace/blob/master/stacktrace.js
     var info = new CallerInfo();
-    try { this.undef() /* throw exc with info */ }
-    catch (exc) {
-      info.stack = exc.stack;
-      var stack = exc.stack.replace(/(?:\n@:0)?\s+$/m, '').replace(/^\(/gm, '{anonymous}(').split('\n');
-      // "{anonymous}([object Object],\"refreshEngine\",[object Proxy])@chrome://gprivacy/content/gprivacy.js:134"
-      if (stack.length > level+1) {
-        var sinfo = stack[level+1].split('@');
-        if (sinfo.length == 2) {
-          info.sourceLine = sinfo[0];
-          var c = sinfo[1].lastIndexOf(":");
-          if (c != -1) { 
-            info.filename   = info.fileName = sinfo[1].slice(0, c);
-            info.lineNumber = parseInt(sinfo[1].slice(c+1));
-          } else {
-            info.filename   = info.fileName = sinfo[1]
-            info.lineNumber = 1;
-          }
+    var exc  = new Error();
+    info.stack = exc.stack;
+    var stack = exc.stack.replace(/(?:\n@:0)?\s+$/m, '').replace(/^\(/gm, '{anonymous}(').split('\n');
+    // "{anonymous}([object Object],\"refreshEngine\",[object Proxy])@chrome://gprivacy/content/gprivacy.js:134"
+    if (stack.length > level+1) {
+      var sinfo = stack[level+1].split('@');
+      if (sinfo.length == 2) {
+        info.sourceLine = sinfo[0];
+        var c = sinfo[1].lastIndexOf(":");
+        if (c != -1) { 
+          info.filename   = info.fileName = sinfo[1].slice(0, c);
+          info.lineNumber = parseInt(sinfo[1].slice(c+1));
+        } else {
+          info.filename   = info.fileName = sinfo[1]
+          info.lineNumber = 1;
         }
-        else
-          info.sourcLine = stack[level+1];
       }
+      else
+        info.sourcLine = stack[level+1];
     }
     return info;
   },
