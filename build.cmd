@@ -10,4 +10,4 @@ rem set "LOG=2>&1 | tee -a %~dp0build.log"
 rem make jar output more compact ;-)
 set JAVA_TOOL_OPTIONS=-Duser.language=en -Duser.country=US
 
-call python26 "%~dp0mkinst.py" -o "%~dp0\versions" -i "%~dp0." --AMO --latest %LOG%
+call python26 "%~dp0mkinst.py" -p smsengineadd -o "%~dp0\versions" -i "%~dp0." --AMO --latest %LOG%
