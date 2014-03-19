@@ -8,7 +8,7 @@
     <em:name>Add Search Engines for SeaMonkey</em:name> <!-- We'll probably have to change this -->
     
     <!-- REMOVEME: Don't forget to update about.xul (also Ask.com) and update.rdf, too! -->
-    <em:version>0.1.1pre1-dev</em:version>
+    <em:version>0.1.1pre2-dev</em:version>
 
     <em:creator>Herrminator</em:creator>
     <em:homepageURL>https://github.com/Herrminator/smsengineadd/wiki</em:homepageURL>
@@ -19,9 +19,11 @@
       <Description>
         <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id> <!-- SeaMonkey -->
         <em:minVersion>2.2</em:minVersion>
-        <em:maxVersion>2.11a1</em:maxVersion>
+        <em:maxVersion>2.26</em:maxVersion>
       </Description>
     </em:targetApplication>
+    <!-- SeaMonkey 2.27+ supports this feature by itself -->
+    <em:strictCompatibility>true</em:strictCompatibility>
     <em:updateURL>https://github.com/Herrminator/smsengineadd/raw/master/update.rdf</em:updateURL>
   </Description>
 </RDF>

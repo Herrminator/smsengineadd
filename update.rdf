@@ -9,7 +9,7 @@
 
         <RDF:li>
           <RDF:Description>
-            <em:version>0.1.1pre1-dev</em:version> <!-- This is the version number of the add-on -->
+            <em:version>0.1.1pre2-dev</em:version> <!-- This is the version number of the add-on -->
             <!-- ALERT: please update the updateLink's below! -->
             
             <em:targetApplication>
@@ -17,10 +17,12 @@
               <Description>
                 <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
                 <em:minVersion>2.2</em:minVersion>
-                <em:maxVersion>2.11a1</em:maxVersion>
+                <em:maxVersion>2.26</em:maxVersion>
                 <em:updateLink>https://github.com/Herrminator/smsengineadd/raw/master/versions/smsengineadd-latest-dev.xpi</em:updateLink>
               </Description>
             </em:targetApplication>
+            <!-- SeaMonkey 2.27+ supports this feature by itself -->
+            <em:strictCompatibility>true</em:strictCompatibility>
           </RDF:Description>
         </RDF:li>
 

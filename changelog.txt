@@ -1,11 +1,14 @@
-* Set github wiki as homepage
-  
 0.1.1:
 
+- Set strict maximum compatibility to SeaMonkey 2.6. 2.7 implements this add-on.
++ Add Form History Control context menu if installed  
 + Add README as per github recommendation
 + Add wiki repository as submodule  
 * Bump version number
 * Ignore pre version directory  
+* Set github wiki as homepage
+* Use stack from Error-class instead of throwing an exception in Logging
+* Use jsshell from Gecko 15 for syntax check
 
 0.1.0:
 
